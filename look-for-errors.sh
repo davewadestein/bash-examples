@@ -34,7 +34,7 @@ echo mkdir $dir
 # through them to save so we can then rm * the rest.
 
 for this_ext in $(tr ',' ' ' <<< $ext); do
-    echo workig on extension $this_ext
+    echo working on extension $this_ext
     for file in $(grep -l $1 *.$this_ext); do
         echo mv $file $dir
     done
